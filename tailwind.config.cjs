@@ -1,12 +1,14 @@
+console.log(">>> Loading tailwind.config.cjs");
+
 const config = {
   mode: "jit",
   purge: ["./src/**/*.{html,js,svelte,ts}"],
 
   theme: {
-    extend: {}
+    extend: {},
   },
 
-  plugins: []
+  plugins: [],
 };
 
 module.exports = config;
