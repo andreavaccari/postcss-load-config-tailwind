@@ -9,9 +9,13 @@ const dev = mode === "development";
 
 const config = {
   plugins: [
-    //Some plugins, like tailwindcss/nesting, need to run before Tailwind,
+    // OPTION 1: Adding the plugin with invocation
     tailwindcss(),
-    //But others, like autoprefixer, need to run after,
+
+    // OPTION 2: Adding the plugin without invocation
+    // tailwindcss,
+
+    // But others, like autoprefixer, need to run after,
     autoprefixer(),
     !dev &&
       cssnano({
